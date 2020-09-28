@@ -1,0 +1,33 @@
+﻿<Window
+    x:Class="Dibujo.Geometrias.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="300"
+    Height="300"
+    mc:Ignorable="d">
+
+    <!--  Usando la clase Path  en el cual se puede usar geometrias y dentro figuras  -->
+    <Path Stroke="Black" StrokeThickness="1">
+        <Path.Data>
+            <PathGeometry>
+                <PathFigure>
+                    <ArcSegment
+                        IsLargeArc="True"
+                        Point="200,100"
+                        RotationAngle="45"
+                        Size="100,50"
+                        SweepDirection="Counterclockwise" />
+                    <ArcSegment
+                        IsLargeArc="True"
+                        Point="200,200"
+                        RotationAngle="60"
+                        Size="100,50"
+                        SweepDirection="Counterclockwise" />
+                </PathFigure>
+            </PathGeometry>
+        </Path.Data>
+    </Path>
+</Window>
